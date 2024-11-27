@@ -77,11 +77,5 @@ const getFoliantConfig = (configContent) => {
 }
 
 module.exports = {
-    getFoliantConfig,
-    env,
-    path,
-    project_path,
-    rel_path,
-    include,
-    from
+    getFoliantConfig
 }

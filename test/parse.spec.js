@@ -14,7 +14,7 @@ test('parse foliant.yml', async () => {
             "test.md",
             `${cwd}/test/test-2.md`,
             `${cwd}/test/test-2.md`,
-            `../test/test-2.md`,
+            "../test/test-2.md",
             "../test/test-3.md",
             {
                 "Section chapters":[

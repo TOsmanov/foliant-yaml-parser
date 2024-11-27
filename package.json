@@ -1,7 +1,7 @@
 {
   "name": "foliant-yaml-parser",
   "version": "0.0.1",
-  "description": "The YAML configuration parser for foliant projects (foliant: https://github.com/foliant-docs)",
+  "description": "The YAML configuration parser for foliant projects (Foliant: https://github.com/foliant-docs)",
   "main": "index.js",
   "scripts": {
     "test": "npx jest"

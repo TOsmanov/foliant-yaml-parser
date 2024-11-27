@@ -1,15 +1,8 @@
 // @ts-check
 
 const fs = require('fs')
-const YAML = require('yaml')
+const parser = require('./index.js')
 const shell = require('shelljs')
-const {
-    env,
-    path,
-    project_path,
-    rel_path,
-    include
-} = require('./index.js')
 
 const cwd = process.cwd()
 
@@ -40,9 +33,7 @@ const resolve = function (str) {
     content = fs.readFileSync(configPath, 'utf-8')
     console.log('content',content )
 
-    const config = YAML.parse(content, {
-        customTags: [env, path, project_path, rel_path, include]
-    })
+    const config = parser.getFoliantConfig(content)
     console.log(config)
     const subprojectChapters = {
         [config.title]: config.chapters
