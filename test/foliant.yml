@@ -1,0 +1,15 @@
+title: &title Test-project
+
+chapters:
+  - test.md
+  - !path test/test-2.md
+  - !project_path test/test-2.md
+  - !rel_path ../test/test-2.md
+  - !env TEST_3_PATH
+  - Section chapters: !include test/chapters.yml
+  - Section foliant-2: !include test/foliant-2.yml#chapters
+  # - !from https://github.com/foliant-docs/docs TODO
+
+backend_config:
+  pre:
+    slug: *title
